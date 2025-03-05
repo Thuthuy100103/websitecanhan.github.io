@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Chuyên Nghiệp</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Công Ty XYZ</h1>
+            </div>
+            <ul>
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">Giới Thiệu</a></li>
+                <li><a href="#">Dịch Vụ</a></li>
+                <li><a href="#">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" data-aos="fade-in">
+        <div class="hero-content">
+            <h1>Chào Mừng Đến Với Công Ty BÁN ĐÀO</h1>
+            <p>Chúng tôi cung cấp những dịch vụ tuyệt vời cho doanh nghiệp của bạn.</p>
+            <a href="#services" class="btn">Khám Phá Ngay</a>
+        </div>
+    </section>
+
+  
+
+    <!-- Phần Avatar và Giới Thiệu Công Ty -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="avatar">
+                <img src="c:\Users\Thu Thuy\Pictures\Screenshots\avatar.jpg.png" alt="Avatar Công Ty XYZ">
+            </div>
+            <div class="about-text">
+                <h2>Giới Thiệu Về Công Ty Bán Đào</h2>
+                <p>2180601544_HÀ THỊ THU THỦY</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Dịch Vụ Của Chúng Tôi</h2>
+        <div class="service-items">
+            <div class="service-item" data-aos="fade-up">
+                <img src="c:\Users\Thu Thuy\Pictures\Screenshots\Screenshot 2025-02-25 200422.png" alt="Thiết Kế Web">
+                <h3>PHAN THÁI NGÂN</h3>
+                <p>Chúng tôi tạo ra những trang web đẹp mắt, dễ sử dụng và tối ưu cho người dùng.</p>
+            </div>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <img src="c:\Users\Thu Thuy\Pictures\Screenshots\Screenshot 2025-03-01 090652.png" alt="Phát Triển Ứng Dụng">
+                <h3>HÀ THỊ PHƯỢNG</h3>
+                <p>Phát triển ứng dụng di động và web mạnh mẽ, tiện dụng cho doanh nghiệp của bạn.</p>
+            </div>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="c:\Users\Thu Thuy\Downloads\z6362873200771_d6cd1d728f07d3c5381cc78eb8155c2d.jpg" alt="Marketing Digital">
+                <h3>PHẠM THỊ NGỌC LINH</h3>
+                <p>Tối ưu hóa công cụ tìm kiếm (SEO) và quảng cáo để giúp bạn tiếp cận khách hàng nhanh chóng.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Công Ty Bán Đào</p>
+    </footer>
+
+    <script>
+        // Kích hoạt hiệu ứng khi cuộn xuống
+        window.addEventListener('scroll', function() {
+            const imageSection = document.getElementById('imageSection');
+            const position = imageSection.getBoundingClientRect();
+
+            if (position.top < window.innerHeight) {
+                imageSection.classList.add('show');  // Khi cuộn đến vị trí của phần hình ảnh
+            }
+        });
+
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+</body>
+</html>
